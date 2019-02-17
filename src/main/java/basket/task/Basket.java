@@ -1,6 +1,6 @@
 package basket.task;
 
-import baskettask.BigDecimal;
+import java.math.BigDecimal;
 
 public class Basket {
 
@@ -11,6 +11,11 @@ public class Basket {
 	}
 
 	public BigDecimal getPriceAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public BigDecimal getPriceForItemType(String string) {
 		// TODO Auto-generated method stub
 		return null;
 	}

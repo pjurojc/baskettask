@@ -22,8 +22,5 @@ public class BasketTestA {
 		BigDecimal basketPrice=basket.getPriceForItemType("A");
 		Assert.assertEquals(basketPrice, new BigDecimal(40));
 	}
-	
-	
-
 
 }
