@@ -1,7 +1,6 @@
 package basket.task.items;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 import basket.task.Item;
 
@@ -20,7 +19,7 @@ public class ItemA implements Item{
 	}
 
 	@Override
-	public BigDecimal calculeteItems(List<Item> items) {
+	public BigDecimal calculeteItems(Long itemsCount) {
 		
 		return null;
 	}

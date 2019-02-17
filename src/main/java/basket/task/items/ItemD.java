@@ -20,7 +20,7 @@ public class ItemD implements Item {
 	}
 
 	@Override
-	public BigDecimal calculeteItems(List<Item> items) {
+	public BigDecimal calculeteItems(Long itemsCount) {
 		// TODO Auto-generated method stub
 		return null;
 	}
