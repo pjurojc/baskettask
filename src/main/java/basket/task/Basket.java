@@ -31,14 +31,13 @@ public class Basket {
 	public BigDecimal getPriceAllItems() {
 		BigDecimal basketContentPrice=new BigDecimal(0);
 		for (ItemType type : ItemType.values()) {
-			basketContentPrice=basketContentPrice.add(ItemFactory.createItem(type).calculeteItems(basketContent.get(type)));
+			basketContentPrice=getPriceForItemType(type);
 		}
 		return basketContentPrice;
 	}
 
 	public BigDecimal getPriceForItemType(ItemType itemType) {
-		// TODO Auto-generated method stub
-		return null;
+		return ItemFactory.createItem(itemType).calculeteItems(basketContent.get(itemType));
 	}
 
 }
