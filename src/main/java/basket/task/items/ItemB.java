@@ -9,12 +9,12 @@ public class ItemB implements Item {
 
 	@Override
 	public BigDecimal getPrice() {
-		
+		return null;
 	}
 
 	@Override
 	public BigDecimal getSpecialPrice() {
-		
+		return null;
 	}
 
 	@Override

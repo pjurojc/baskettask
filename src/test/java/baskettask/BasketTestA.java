@@ -14,14 +14,14 @@ public class BasketTestA {
 		Basket basket = new Basket();
 		basket.putItemsIntoBasket(ItemType.A, 3);
 		BigDecimal basketPrice=basket.getPriceForItemType(ItemType.A);
-		Assert.assertEquals(basketPrice, new BigDecimal(70));
+		Assert.assertEquals(new BigDecimal(70),basketPrice);
 	}
 	@Test
 	public void TestItemTypeACount1() {
 		Basket basket = new Basket();
 		basket.putItemsIntoBasket(ItemType.A, 1);
 		BigDecimal basketPrice=basket.getPriceForItemType(ItemType.A);
-		Assert.assertEquals(basketPrice, new BigDecimal(40));
+		Assert.assertEquals(new BigDecimal(40),basketPrice);
 	}
 
 }

@@ -21,17 +21,17 @@ public class Basket {
 	private void incrementCountOfItemTypeInBasket(ItemType itemType) {
 		Long basketItemtemCount = basketContent.get(itemType);
 		if (basketItemtemCount == null) {
-			basketItemtemCount = 0L;
-		} else {
-			basketItemtemCount++;
-			basketContent.put(itemType, basketItemtemCount);
-		}
+			basketItemtemCount = new Long(0);
+		} 
+		basketItemtemCount++;
+		basketContent.put(itemType, basketItemtemCount);
+		
 	}
 
 	public BigDecimal getPriceAllItems() {
 		BigDecimal basketContentPrice=new BigDecimal(0);
 		for (ItemType type : ItemType.values()) {
-			basketContentPrice=getPriceForItemType(type);
+			basketContentPrice=basketContentPrice.add(getPriceForItemType(type));
 		}
 		return basketContentPrice;
 	}
