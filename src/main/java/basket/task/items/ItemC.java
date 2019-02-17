@@ -1,7 +1,6 @@
 package basket.task.items;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 import basket.task.Item;
 

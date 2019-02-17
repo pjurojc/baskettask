@@ -23,5 +23,18 @@ public class BasketTestA {
 		BigDecimal basketPrice=basket.getPriceForItemType(ItemType.A);
 		Assert.assertEquals(new BigDecimal(40),basketPrice);
 	}
-
+	@Test
+	public void TestItemTypeACount2() {
+		Basket basket = new Basket();
+		basket.putItemsIntoBasket(ItemType.A, 2);
+		BigDecimal basketPrice=basket.getPriceForItemType(ItemType.A);
+		Assert.assertEquals(new BigDecimal(80),basketPrice);
+	}
+	@Test
+	public void TestItemTypeACount6() {
+		Basket basket = new Basket();
+		basket.putItemsIntoBasket(ItemType.A, 6);
+		BigDecimal basketPrice=basket.getPriceForItemType(ItemType.A);
+		Assert.assertEquals(new BigDecimal(140),basketPrice);
+	}
 }

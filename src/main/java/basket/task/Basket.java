@@ -2,10 +2,7 @@ package basket.task;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Consumer;
-import java.util.function.Function;
 
-import basket.task.items.ItemA;
 import basket.task.items.ItemFactory;
 import basket.task.items.ItemType;
 
