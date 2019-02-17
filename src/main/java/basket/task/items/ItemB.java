@@ -9,17 +9,23 @@ public class ItemB implements Item {
 
 	@Override
 	public BigDecimal getPrice() {
-		return null;
+		return new BigDecimal(10);
 	}
 
 	@Override
 	public BigDecimal getSpecialPrice() {
-		return null;
+		return new BigDecimal(15);
 	}
 
 	@Override
 	public BigDecimal calculeteItems(Long itemsCount) {
-		return null;
+		long secialPriceCount = itemsCount/2;
+		long secialPriceItems = secialPriceCount*2;
+		long otherItems=itemsCount-secialPriceItems;
+		return   getSpecialPrice().multiply(new BigDecimal(secialPriceCount))
+				.add(
+						getPrice().multiply(new BigDecimal(otherItems))
+				);
 	}
 
 }
