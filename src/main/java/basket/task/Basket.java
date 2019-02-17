@@ -31,10 +31,9 @@ public class Basket {
 	public BigDecimal getPriceAllItems() {
 		BigDecimal basketContentPrice=new BigDecimal(0);
 		for (ItemType type : ItemType.values()) {
-			
+			basketContentPrice=basketContentPrice.add(ItemFactory.createItem(type).calculeteItems(basketContent.get(type)));
 		}
-		
-		//basketContentPrice=basketContentPrice.add(ItemFactory.createItem(t).calculeteItems(basketContent.get(t)));	
+		return basketContentPrice;
 	}
 
 	public BigDecimal getPriceForItemType(ItemType itemType) {
