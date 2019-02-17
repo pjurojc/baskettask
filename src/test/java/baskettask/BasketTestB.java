@@ -7,21 +7,7 @@ import org.junit.Test;
 
 import basket.task.Basket;
 
-public class BasketTest {
-	@Test
-	public void TestItemTypeACount3() {
-		Basket basket = new Basket();
-		basket.putItemsIntoBasket("A", 3);
-		BigDecimal basketPrice=basket.getPriceForItemType("A");
-		Assert.assertEquals(basketPrice, new BigDecimal(70));
-	}
-	
-	public void TestItemTypeACount1() {
-		Basket basket = new Basket();
-		basket.putItemsIntoBasket("A", 1);
-		BigDecimal basketPrice=basket.getPriceForItemType("A");
-		Assert.assertEquals(basketPrice, new BigDecimal(40));
-	}
+public class BasketTestB {
 	
 	@Test
 	public void TestItemTypeBCount2() {
