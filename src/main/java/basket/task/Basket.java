@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import basket.task.items.ItemType;
 
 public class Basket {
-    ConcurrentHashMap<String, Long> basketContent=new ConcurrentHashMap<>();
+    ConcurrentHashMap<ItemType, Long> basketContent=new ConcurrentHashMap<>();
 	public void putItemsIntoBasket(ItemType itemType, int itemsCount) {
 		for (int i=0;i<itemsCount;i++) {
 			
