@@ -1,11 +1,8 @@
-package basket.task;
+package basket.task.items;
 
 import javax.activation.UnsupportedDataTypeException;
 
-import basket.task.items.ItemA;
-import basket.task.items.ItemB;
-import basket.task.items.ItemC;
-import basket.task.items.ItemD;
+import basket.task.Item;
 
 public class ItemFactory {
 	public static Item createItem(ItemType type){
