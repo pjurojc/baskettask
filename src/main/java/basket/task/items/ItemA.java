@@ -8,20 +8,17 @@ public class ItemA implements Item{
 
 	@Override
 	public BigDecimal getPrice() {
-		// TODO Auto-generated method stub
-		return null;
+		return new BigDecimal(40);
 	}
 
 	@Override
 	public BigDecimal getSpecialPrice() {
-		// TODO Auto-generated method stub
-		return null;
+		return new BigDecimal(70).divide(new BigDecimal(3));
 	}
 
 	@Override
 	public BigDecimal calculeteItems(Long itemsCount) {
-		
-		return null;
+		return getPrice().multiply(new BigDecimal(itemsCount%3L));
 	}
 	
 }
