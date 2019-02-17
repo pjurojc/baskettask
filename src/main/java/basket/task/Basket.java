@@ -3,9 +3,11 @@ package basket.task;
 import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
 
+import basket.task.items.ItemType;
+
 public class Basket {
     ConcurrentHashMap<String, Long> basketContent=new ConcurrentHashMap<>();
-	public void putItemsIntoBasket(String itemType, int itemsCount) {
+	public void putItemsIntoBasket(ItemType itemType, int itemsCount) {
 		for (int i=0;i<itemsCount;i++) {
 			
 		}
@@ -16,7 +18,7 @@ public class Basket {
 		return null;
 	}
 
-	public BigDecimal getPriceForItemType(String string) {
+	public BigDecimal getPriceForItemType(ItemType itemType) {
 		// TODO Auto-generated method stub
 		return null;
 	}

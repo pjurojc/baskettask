@@ -1,7 +1,5 @@
 package basket.task.items;
 
-import javax.activation.UnsupportedDataTypeException;
-
 import basket.task.Item;
 
 public class ItemFactory {
