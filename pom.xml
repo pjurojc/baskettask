@@ -3,7 +3,7 @@
 
 	<groupId>basket.task</groupId>
 	<artifactId>basket</artifactId>
-	<version>1.4</version>
+	<version>1.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>basket</name>
