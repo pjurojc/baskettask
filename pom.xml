@@ -5,10 +5,7 @@
 	<artifactId>basket</artifactId>
 	<version>1.8-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>basket</name>
-	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
