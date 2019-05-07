@@ -14,9 +14,8 @@
 	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/pjurojc/baskettask.git</connection>
-		<url>https://github.com/pjurojc/baskettask</url>
+		<url>http://github.com/pjurojc/baskettask</url>
 		<developerConnection>scm:git:https://github.com/pjurojc/baskettask.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
 	<build>
 		<plugins>
